@@ -1,0 +1,3 @@
+Project Manager installation
+
+  Download the project from <https://github.com/TennoWarfov/Web-API.git>. Open WebApp1\WebApplication1\WebApplication1.sln with Visual Studio

@@ -1,0 +1,17 @@
+﻿@model IEnumerable<WebApplication1.Models.Project>
+@{
+    ViewBag.Title = "All projects";
+}
+<a asp-action="Create">Add Project</a>
+<table class="table">
+    <tr><td>Name</td><td>Task</td></tr>
+    @foreach (var item in Model)
+    {
+        <tr><td>@item.Name</td>
+            <td>
+                <a asp-action="Details" asp-controller="Home" asp-route-id="@item.Id">Details</a> |
+                <a asp-action="Edit" asp-controller="Home" asp-route-id="@item.Id">Edit</a> |
+                <a asp-action="Delete" asp-controller="Home" asp-route-id="@item.Id">Delete</a>
+            </td></tr>
+    }
+</table>

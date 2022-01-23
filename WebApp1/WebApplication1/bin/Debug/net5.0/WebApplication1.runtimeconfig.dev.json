@@ -1,0 +1,8 @@
+{
+  "runtimeOptions": {
+    "additionalProbingPaths": [
+      "C:\\Users\\Tenno\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\Tenno\\.nuget\\packages"
+    ]
+  }
+}

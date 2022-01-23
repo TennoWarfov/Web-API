@@ -1,0 +1,33 @@
+﻿@model WebApplication1.Models.Project
+@{
+    ViewBag.Title = "Add Project";
+}
+<form asp-action="create" asp-controller="home">
+    <div class="form-group">
+        <label asp-for="Name" class="control-label">Name</label>
+        <input type="text" asp-for="Name" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label asp-for="Task" class="control-label">Task</label>
+        <input type="text" asp-for="Task" class="form-control" />
+    </div>
+    <@*div class="form-group">
+        <label asp-for="StartDate" class="control-label">Start Date</label>
+        <input type="date" asp-for="StartDate" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label asp-for="EndDate" class="control-label">Completion Date</label>
+        <input type="date" asp-for="EndDate" class="form-control" />
+    </div>*@
+    @*<div class="form-group">
+        <label asp-for="ProjectStatus" class="control-label">ProjectStatus</label>
+        <input type="text" asp-for="ProjectStatus" class="form-control" />
+    </div>*@
+    @*<div class="form-group">
+        <label asp-for="Priority" class="control-label">Priority</label>
+        <input type="number" asp-for="Priority" class="form-control" />
+    </div>*@
+    <div class="form-group">
+        <input type="submit" value="Submit" class="btn btn-default" />
+    </div>
+</form>
